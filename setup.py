@@ -3,7 +3,10 @@ import sys, os
 
 version = '0.1'
 
-long_description = ""
+try:
+    long_description = open("README.txt").read()
+except:
+    long_description = ""
 
 setup(name='django-templateinspector',
       version=version,
